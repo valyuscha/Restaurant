@@ -1,0 +1,154 @@
+.stuff {
+  margin-bottom: 280px;
+  position: relative;
+
+  &__name {
+    @extend %part-name;
+    text-align: center;
+    padding-bottom: 75px;
+  }
+
+  &__block_back {
+    &-big-round,
+    &-small-round {
+      background: #00c5d2 linear-gradient(to left, #00fff0 0%, #40b1e5 100%);
+      border-radius: 50%;
+      position: absolute;
+    }
+
+    &-big-round {
+      width: 320px;
+      height: 320px;
+      left: -50px;
+      top: 50px;
+    }
+
+    &-small-round {
+      width: 167px;
+      height: 167px;
+      right: 0;
+      top: 710px;
+    }
+  }
+
+  &__slider {
+    position: relative;
+
+    &-block {
+      &__item {
+        background: $white;
+        box-shadow: 0 0 6px rgba(33, 30, 31, 0.4);
+        margin: 10px;
+
+        figure {
+          position: relative;
+          width: 370px;
+          height: 433px;
+          display: flex;
+          align-items: flex-end;
+          margin: 0 auto;
+
+          .stuff-hover {
+            position: relative;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            background-image: linear-gradient(to left, #00fff0 0%, #40b1e5 100%);
+            opacity: 0;
+            transition: all .3s;
+
+            &:hover {
+              opacity: 0.7;
+            }
+
+            a {
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+              color: $orange;
+              font-size: 30px;
+
+              &:first-child {
+                left: 41%;
+              }
+
+              &:last-child {
+                left: 55%;
+              }
+            }
+
+          }
+
+          .worker {
+            img {
+              max-width: 350px;
+            }
+          }
+        }
+
+        h3 {
+          text-align: center;
+          font-family: $LobsterTwo-regular, sans-serif;
+          color: #00c5d2;
+          font-size: 24px;
+          padding-top: 37px;
+          line-height: 28px;
+
+          span {
+            color: $grey;
+            font-size: 18px;
+          }
+        }
+
+        p {
+          text-align: center;
+          padding: 26px 0 40px 0;
+          color: $grey;
+          font-family: $LobsterTwo-regular, sans-serif;
+
+          a {
+            color: $grey;
+
+            i {
+              display: inline-block;
+              padding-left: 10px;
+            }
+          }
+        }
+      }
+      &__nav {
+        @extend %slider-nav;
+        width: 103%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 48px;
+        color: #00c5d2;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .stuff{
+    &__name {
+      padding-bottom: 155px;
+    }
+
+    &__block_back {
+      &-big-round {
+        top: 130px;
+      }
+
+      &-small-round {
+        top: 790px;
+      }
+    }
+  }
+}

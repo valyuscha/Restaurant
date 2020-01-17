@@ -1,0 +1,265 @@
+.footer {
+  background: url("../img/footer/footer-background.png") no-repeat 50% 50%/cover;
+  font-family: $Poppins-regular, sans-serif;
+
+  &__block {
+    @extend %flex;
+
+    &_instagram {
+      width: 250px;
+      padding-top: 80px;
+
+      &_name {
+        h3 {
+          font-family: LobsterTwo-regular, sans-serif;
+          font-size: 36px;
+          margin-bottom: 20px;
+        }
+      }
+
+      img {
+        margin-bottom: 5px;
+      }
+    }
+
+    &_introduction {
+      width: 471px;
+      text-align: center;
+      padding-top: 49px;
+
+      img {
+        width: 74px;
+      }
+
+      h3 {
+        font-family: LobsterTwo-regular, sans-serif;
+        font-size: 36px;
+        padding: 17px 0 25px;
+      }
+
+      p {
+        line-height: 28px;
+        color: $grey;
+        font-size: 14px;
+      }
+    }
+
+    &_tag {
+      width: 316px;
+      padding-top: 80px;
+
+      &_name {
+        h3 {
+          font-family: LobsterTwo-regular, sans-serif;
+          font-size: 36px;
+          margin-bottom: 20px;
+        }
+      }
+
+      &_links {
+        width: 100%;
+        a {
+          font-size: 14px;
+          display: inline-block;
+          padding: 10px 25px;
+          background: $white;
+          margin: 0 10px 10px 0;
+          color: #222222;
+          text-decoration: none;
+          transition: all .3s;
+
+          &:hover {
+            background: #EAEAEA;
+          }
+        }
+      }
+
+      &_input {
+        margin-top: 35px;
+        position: relative;
+
+        input {
+          padding: 10px 50px 10px 15px;
+          width: 269px;
+          border: none;
+
+          &::placeholder {
+            color: $grey;
+            font-family: $Poppins-regular, sans-serif;
+          }
+        }
+
+        button {
+          position: absolute;
+          top: 0;
+          left: 95%;
+          padding: 10px 12px;
+          background-color: #00c5d2;
+          border: none;
+          color: $white;
+        }
+      }
+    }
+  }
+
+  &__links {
+    @extend %flex;
+    padding: 43px 0 82px;
+
+    &_societies {
+      width: 200px;
+      @extend %flex;
+
+      a {
+        font-size: 24px;
+        color: $grey;
+      }
+    }
+
+    &_userful {
+      width: 675px;
+      @extend %flex;
+
+      span {
+        color: #00c5d2;
+        font-family: $Poppins-bold, sans-serif;
+        font-size: 14px;
+        text-transform: uppercase;
+      }
+
+      a {
+        color: #222222;
+        text-decoration: none;
+        font-family: $Poppins-bold, sans-serif;
+        font-size: 14px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .footer {
+    &__block {
+      justify-content: space-around;
+
+      &_tag {
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+
+        &_input {
+          input {
+            width: 80%;
+          }
+
+          button {
+            left: 89%;
+          }
+        }
+      }
+    }
+
+    &__links {
+      &_societies {
+        width: 25%;
+      }
+
+      &_userful {
+        width: 70%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .footer {
+    &__links {
+      display: block;
+
+      &_societies {
+        width: 25%;
+        margin: 0 auto 50px auto;
+      }
+
+      &_userful {
+        width: 90%;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 705px) {
+  .footer {
+    &__block {
+      &_tag {
+        width: 60%;
+      }
+    }
+
+    &__links {
+      &_societies {
+        width: 45%;
+      }
+
+      &_userful {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    &__block {
+      &_tag {
+        width: 70%;
+      }
+    }
+
+    &__links {
+      &_societies {
+        width: 45%;
+      }
+
+      &_userful {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+
+        span {
+          margin-bottom: 20px;
+        }
+
+        a {
+          margin-bottom: 20px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 505px) {
+  .footer {
+    &__block {
+      &_tag {
+        width: 80%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .footer {
+    &__block {
+      &_tag {
+        width: 90%;
+      }
+    }
+  }
+}

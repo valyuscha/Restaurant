@@ -1,0 +1,88 @@
+.schedule {
+  background: url("../img/schedule/background.png") no-repeat 50% 50%/cover;
+
+  &__name {
+    @extend %part-name;
+    padding-top: 198px;
+    text-align: center;
+
+    h3 {
+      color: $white;
+    }
+  }
+
+  &__block {
+    @extend %flex;
+    padding: 77px 0 200px;
+
+    &_item {
+      width: 370px;
+      text-align: center;
+
+      &_image {
+        background: $white;
+        display: inline-block;
+        border-radius: 0 24px;
+        box-shadow: 0 2px 8px rgba(33, 30, 31, 0.5);
+        width: 100px;
+        padding: 10px 0;
+        text-align: center;
+        position: relative;
+        top: 45px;
+      }
+
+      &_text {
+        background: $white;
+        text-align: center;
+
+        h3 {
+          padding-top: 80px;
+          font-size: 28px;
+          color: $orange;
+          font-family: $LobsterTwo-regular, sans-serif;
+        }
+
+        p {
+          color: $grey;
+          font-family: $Poppins-regular, sans-serif;
+          line-height: 28px;
+          padding: 30px 40px 52px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .schedule {
+    &__block {
+      &_item:last-child {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .schedule {
+    &__block {
+      display: block;
+
+      &_item:first-child,
+      &_item:nth-child(2) {
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .schedule {
+    &__name {
+      span {
+        line-height: 40px;
+      }
+    }
+  }
+}

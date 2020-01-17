@@ -1,0 +1,112 @@
+.subscribe {
+  margin-top: 200px;
+  background: url("../img/subscribe-background.png") no-repeat 50% 50%/cover;
+  font-family: $Poppins-regular, sans-serif;
+
+  &__name {
+    padding-top: 200px;
+
+    h3 {
+      font-size: 36px;
+      font-family: $LobsterTwo-regular, sans-serif;
+      color: $white;
+    }
+  }
+
+  &__block {
+    @extend %flex;
+    padding-bottom: 200px;
+    align-items: center;
+
+    &_text {
+      p {
+        padding-top: 48px;
+        font-size: 14px;
+        line-height: 28px;
+        color: $white;
+        width: 574px;
+      }
+    }
+
+    &_input {
+      position: relative;
+
+      input {
+        box-sizing: border-box;
+        padding: 30px 95px 30px 20px;
+        width: 500px;
+
+        &::placeholder {
+          color: $grey;
+          font-size: 18px;
+        }
+      }
+
+      button {
+        border: none;
+        background-image: linear-gradient(to left, #00fff0 0%, #40b1e5 100%);
+        position: absolute;
+        right: 0;
+
+        i {
+          color: $white;
+          font-size: 36px;
+          padding: 22px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .subscribe {
+    &__block {
+      &_text {
+        width: 48%;
+
+        p {
+          width: 100%;
+        }
+      }
+
+      &_input {
+        width: 48%;
+
+        input {
+          width: 100%
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .subscribe {
+    &__block {
+      display: block;
+
+      &_text {
+        width: 70%;
+        margin-bottom: 50px;
+      }
+
+      &_input {
+        width: 70%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .subscribe {
+    &__block {
+      &_text {
+        width: 100%;
+      }
+
+      &_input {
+        width: 100%;
+      }
+    }
+  }
+}

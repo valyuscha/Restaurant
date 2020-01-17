@@ -1,0 +1,169 @@
+.welcome {
+  font-family: $Poppins-regular, sans-serif;
+
+  &__block {
+    @extend %flex;
+
+    &_text {
+      margin-top: 155px;
+
+      h3 {
+        color: $orange;
+        font-family: $LobsterTwo-bold, sans-serif;
+        font-size: 50px;
+        line-height: 38px;
+
+        span {
+          color: #222222;
+          font-size: 28px;
+        }
+      }
+
+      p {
+        width: 700px;
+        color: $grey;
+        line-height: 28px;
+        padding-top: 40px;
+
+      }
+
+      p:nth-child(5) {
+        width: 198px;
+        padding-top: 80px;
+        font-family: $Sacramento, sans-serif;
+        font-size: 28px;
+        color: #1c1c1c;
+
+        span {
+          font-size: 20px;
+          display: block;
+          text-align: center;
+        }
+      }
+    }
+
+    &_form {
+      margin: 135px 0 182px 0;
+      width: 370px;
+      background: $orange;
+      position: relative;
+
+      &_name {
+        padding: 80px 0 55px 0;
+        margin: 0 auto;
+        width: 170px;
+        @extend %flex;
+
+        h3 {
+          color: $white;
+          font-family: $LobsterTwo-bold, sans-serif;
+          font-size: 24px;
+        }
+      }
+
+      form {
+        input {
+          margin: 0 20px 20px 20px;
+          width: 77%;
+          padding: 10px 20px;
+        }
+      }
+
+      button {
+        width: 89%;
+        margin: 0 20px 80px 20px;
+        padding: 10px 0;
+        text-align: center;
+        background: #00c5d2;
+        border: none;
+        color: $white;
+        font-family: $Poppins-bold, sans-serif;
+      }
+
+      &_img {
+        z-index: -9999;
+        position: absolute;
+        top: 470px;
+        left: 15%;
+        background: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .welcome {
+    &__block {
+      &_text {
+        p {
+          width: 600px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .welcome {
+    &__block {
+      &_text {
+        p {
+          width: 500px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .welcome {
+    &__block {
+      &_text {
+        p {
+          width: 400px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .welcome {
+    &__block {
+      &_text {
+        p {
+          width: 100%;
+        }
+      }
+
+      &_form {
+        display: block;
+        margin: 135px auto 182px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 642px) {
+  .welcome {
+    &__block {
+      &_text {
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .welcome {
+    &__block {
+      &_form {
+        &_img {
+          left: 6%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+@font-face {
+  font-family: Poppins-regular;
+  src: url("../fonts/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: Poppins-bold;
+  src: url("../fonts/Poppins/Poppins-Bold.ttf");
+}
+
+@font-face {
+  font-family: Sacramento;
+  src: url("../fonts/Sacramento/Sacramento-Regular.ttf");
+}
+
+@font-face {
+  font-family: LobsterTwo-regular;
+  src: url("../fonts/Lobster_Two/LobsterTwo-Regular.ttf");
+}
+
+@font-face {
+  font-family: LobsterTwo-bold;
+  src: url("../fonts/Lobster_Two/LobsterTwo-Bold.ttf");
+}
+
+$Poppins-regular: Poppins-regular;
+$Poppins-bold: Poppins-bold;
+$Sacramento: Sacramento;
+$LobsterTwo-regular: LobsterTwo-regular;
+$LobsterTwo-bold: LobsterTwo-bold;

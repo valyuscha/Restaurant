@@ -1,0 +1,29 @@
+%flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+%part-name {
+  span {
+    color: $orange;
+    font-family: Sacramento, sans-serif;
+    font-size: 32px;
+  }
+
+  h3 {
+    padding-top: 10px;
+    font-family: LobsterTwo-regular, sans-serif;
+    font-size: 36px;
+  }
+}
+
+%slider-nav {
+  img {
+    color: $white;
+    padding: 18px 19px 17px 17px;
+    border-radius: 50%;
+    background: linear-gradient(to left, #00fff0 0%, #40b1e5 100%);
+    cursor: pointer;
+  }
+}

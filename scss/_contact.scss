@@ -1,0 +1,134 @@
+.contact {
+  font-family: $Poppins-regular, sans-serif;
+
+  &__name {
+    @extend %part-name;
+    text-align: center;
+    padding: 190px 0 80px;
+  }
+
+  &__map {
+    iframe {
+      width: 100%;
+      height: 800px;
+    }
+  }
+
+  &__block {
+    @extend %flex;
+    padding: 196px 0 150px;
+
+    &_schedule {
+      &_name {
+        @extend %part-name;
+        padding-bottom: 49px;
+      }
+
+      &_days {
+        p {
+          font-size: 20px;
+          line-height: 60px;
+          color: $grey;
+
+          span {
+            color: #1B1B1B;
+            font-family: $Poppins-bold, sans-serif;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+
+    &_message {
+      &_name {
+        @extend %part-name;
+        padding-bottom: 40px;
+      }
+
+      form {
+        width: 585px;
+
+        input,
+        textarea {
+          display: block;
+          width: 100%;
+          box-sizing: border-box;
+          margin-bottom: 40px;
+          font-size: 18px;
+
+          &::placeholder {
+            color: $grey;
+            font-family: $Poppins-regular, sans-serif;
+            font-size: 18px;
+          }
+        }
+
+        input {
+          padding: 17px 30px 20px;
+        }
+
+        textarea {
+          padding: 17px 30px 0;
+        }
+
+        button {
+          padding: 20px 40px;
+          background: $orange;
+          color: $white;
+          border: none;
+          font-size: 18px;
+          transition: all .3s;
+
+          &:hover {
+            background: #BF3127;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .contact {
+    &__block {
+      &_message {
+        width: 60%;
+
+        form {
+          width: 100%;
+
+          input,
+          textarea {
+            border: 1px solid $grey;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .contact {
+    &__block {
+      display: block;
+
+      &_schedule {
+        margin-bottom: 50px;
+      }
+
+      &_message {
+        width: 70%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .contact {
+    &__block {
+      &_message {
+        width: 100%;
+      }
+    }
+  }
+}

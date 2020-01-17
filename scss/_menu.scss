@@ -1,0 +1,188 @@
+.price {
+  padding-top: 188px;
+  font-family: $Poppins-regular, sans-serif;
+
+  &__name {
+    @extend %part-name;
+    text-align: center;
+  }
+
+  &__list {
+    ul {
+      margin: 0 auto;
+      padding: 79px 0 93px;
+      width: 698px;
+      @extend %flex;
+
+      li {
+        a {
+          text-decoration: none;
+          color: $black;
+          font-family: $Poppins-bold, sans-serif;
+          font-size: 20px;
+
+          &:hover {
+            color: $orange;
+            border-bottom: 2px solid $orange;
+          }
+        }
+      }
+    }
+  }
+
+  &__block {
+    @extend %flex;
+
+    &_item {
+      width: 535px;
+      padding-bottom: 50px;
+      @extend %flex;
+
+      &_text {
+        width: 420px;
+
+        h3 {
+          font-size: 18px;
+          font-family: $Poppins-bold, sans-serif;
+          padding: 9px 0 19px;
+
+          span {
+            font-size: 24px;
+            padding-left: 10px;
+          }
+        }
+
+        p {
+          width: 300px;
+          color: $grey;
+          font-size: 14px;
+          line-height: 26px;
+        }
+      }
+    }
+  }
+
+  &__button {
+    text-align: center;
+    margin: 70px 0 219px;
+
+    a {
+      padding: 15px 30px;
+      color: $orange;
+      border: 2px solid $orange;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: all .3s;
+
+      &:hover {
+        color: $white;
+        background: $orange;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1190px) {
+  .price {
+    &__block {
+      flex-direction: column;
+
+      &_item {
+        width: 100%;
+      }
+
+      figure {
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .price {
+    &__name {
+      span {
+        line-height: 40px;
+      }
+    }
+
+    &__list {
+      ul {
+        width: 100%;
+      }
+    }
+
+    &__block {
+      &_item {
+        &_text {
+          width: 80%;
+
+          h3 {
+            font-size: 14px;
+
+            span {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .price {
+    &__name {
+      span {
+        line-height: 40px;
+      }
+    }
+
+    &__list {
+      ul {
+        width: 100%;
+         li {
+           a {
+             font-size: 17px;
+           }
+         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .price {
+    &__list {
+      ul {
+        width: 100%;
+
+        li {
+          a {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    &__block {
+      &_item {
+        &_text {
+          width: 80%;
+
+          h3 {
+            font-size: 12px;
+
+            span {
+              font-size: 13px;
+            }
+          }
+
+          p {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}

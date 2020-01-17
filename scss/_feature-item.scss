@@ -1,0 +1,59 @@
+.feature {
+  font-family: LobsterTwo-regular, sans-serif;
+  max-width: 1920px;
+
+  &__container {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  &__name {
+    @extend %part-name;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+
+  &__slider {
+    position: relative;
+
+    &-block {
+      &__item {
+        width: 15%;
+        margin: 0 10px;
+
+        figure {
+          img {
+            width: 100%;
+          }
+
+          p {
+            padding-top: 35px;
+            color: #1c1c1c;
+            font-size: 24px;
+            text-align: center;
+            line-height: 30px;
+
+            s {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+
+    .feature__slider-block__nav {
+      @extend %slider-nav;
+      width: 103%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      position: absolute;
+      top: 35%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 48px;
+      color: #00c5d2;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,369 @@
+.header {
+  font-family: $Poppins-regular, sans-serif;
+
+  background: url("../img/header/background.png") no-repeat 50% 50%/cover;
+
+  .scroll {
+    position: fixed;
+    top: 0;
+    background: rgba(0, 0, 0, .7);
+    color: $white;
+    width: 100%;
+    z-index: 9999;
+  }
+
+  .static {
+    background: $white;
+    width: 100%;
+    z-index: 9999;
+    position: static;
+    margin: 0 auto;
+  }
+
+  .color-white {
+    color: $white;
+  }
+
+  .color-black {
+    color: $black;
+  }
+
+  .display-none {
+    display: none;
+  }
+
+  .menu {
+    &_contact {
+      padding: 25px 0;
+      color: $white;
+      @extend %flex;
+      align-items: center;
+
+      &_welcome {
+        width: 350px;
+        text-align: right;
+
+        p {
+          span {
+            color: $orange;
+          }
+        }
+      }
+
+      &_form {
+        input {
+          padding: 7.5px 30px 7px 10px;
+          border-radius: 6px;
+          border: none;
+
+          &::placeholder {
+            font-size: 14px;
+            color: $grey;
+          }
+        }
+
+        span {
+          background-color: $orange;
+          padding: 5px;
+          position: relative;
+          right: 30px;
+          border-radius: 0 6px 6px 0;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+
+      &_phone {
+        span {
+          i {
+            display: inline-block;
+            padding-right: 10px;
+          }
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+
+        a {
+          padding-left: 40px;
+          color: $white;
+          text-decoration: none;
+          outline: none;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    &_links {
+      &_block {
+        @extend %flex;
+        position: relative;
+
+        &_logo {
+          position: absolute;
+          top: -55px;
+        }
+
+        &_menu {
+          @extend %flex;
+          margin-left: 26%;
+          width: 100%;
+
+          ul {
+            @extend %flex;
+            width: 70%;
+            padding: 21px 0;
+
+            li {
+              a {
+                font-family: $Poppins-bold;
+                text-decoration: none;
+                outline: none;
+
+                &:hover {
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+
+
+          button {
+            margin: 0 35px;
+            background: none;
+            border: none;
+          }
+
+          a:nth-child(3) {
+            margin: 15px 0;
+            padding: 5px 10px;
+            background: $orange;
+            border-radius: 0 5px 0 5px;
+            color: $white;
+            text-decoration: none;
+
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .banner {
+    color: $white;
+    text-align: center;
+
+    span {
+      display: block;
+      padding-top: 220px;
+      color: #00c5d2;
+      font-family: $Sacramento, sans-serif;
+      font-size: 36px;
+    }
+
+    h1 {
+      font-family: $LobsterTwo-bold, sans-serif;
+      padding-top: 25px;
+      font-size: 48px;
+    }
+
+    p {
+      width: 799px;
+      margin: 0 auto;
+      font-size: 16px;
+      padding-top: 35px;
+      line-height: 28px;
+    }
+
+    &_buttons {
+      margin: 0 auto;
+      padding: 63px 0 237px 0;
+      width: 300px;
+      @extend %flex;
+
+      a {
+        color: $white;
+        text-decoration: none;
+        padding: 15px 30px;
+        border: 2px solid $orange;
+        border-radius: 6px;
+        outline: none;
+        transition: all .3s;
+
+        &:hover {
+          cursor: pointer;
+          background: $orange;
+        }
+      }
+    }
+  }
+}
+
+.mobile_menu_click {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .header {
+    .menu {
+      &_links {
+        &_block {
+          &_menu {
+            display: none;
+            margin-left: 5%;
+
+            ul {
+              width: 70%;
+            }
+
+            button,
+            a:nth-child(3) {
+              position: absolute;
+              right: 0;
+              bottom: 0;
+            }
+
+            button {
+              right: 130px;
+              bottom: 17px;
+            }
+          }
+        }
+      }
+    }
+
+    .mobile_menu_click {
+      display: block;
+      width: 100%;
+      text-align: right;
+      padding: 15px 0;
+      font-size: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .header {
+    .menu {
+      &_contact {
+        &_phone {
+          display: block;
+          width: 100%;
+          text-align: center;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .header {
+    .menu {
+      &_links {
+        &_block {
+          &_menu {
+            margin-left: 0;
+
+            ul {
+              width: 75%;
+            }
+
+            button {
+              right: 115px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .header {
+    .menu {
+      &_links {
+        &_block {
+          &_menu {
+            width: 100%;
+            margin: 10px auto;
+
+            &:first-child {
+              margin-top: 0;
+            }
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+
+            ul {
+              width: 100%;
+              justify-content: center;
+
+              li {
+                margin: 0 10px 10px 0;
+
+                &:last-child {
+                  margin-left: 0;
+                }
+              }
+            }
+
+            button,
+            a:nth-child(3){
+              position: unset;
+              width: 49%;
+              margin-bottom: 20px;
+            }
+
+            button {
+              text-align: right;
+              margin: 0 0 20px 0;
+            }
+          }
+        }
+      }
+    }
+
+    .banner {
+      h3 {
+        width: 80%;
+      }
+
+      p {
+        width: 90%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .header {
+    .menu {
+      &_contact {
+        &_phone {
+          margin-bottom: 40px;
+        }
+
+        &_welcome,
+        &_form {
+          display: block;
+          width: 100%;
+          text-align: center;
+        }
+
+        &_form {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}

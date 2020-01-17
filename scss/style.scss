@@ -1,0 +1,36 @@
+@import "fonts";
+@import "colors";
+@import "extends";
+
+@import "header";
+@import "welcome";
+@import "feature-item";
+@import "about";
+@import "schedule";
+@import "menu";
+@import "stuff";
+@import "event";
+@import "feedback";
+@import "subscribe";
+@import "blog";
+@import "contact";
+@import "footer";
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 90%;
+  }
+}
+
+//@media screen and (max-width: 1000px) {
+//  width: 90%;
+//}
