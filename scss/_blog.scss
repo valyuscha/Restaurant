@@ -133,6 +133,10 @@
       }
     }
   }
+
+  .hover {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 749px) {
@@ -179,7 +183,29 @@
         }
 
         &__nav {
-          width: 90%;
+          width: 105%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .blog {
+    &__slider {
+      &-block {
+        &__item {
+          &-text {
+            p {
+              width: 90%;
+            }
+          }
+
+          &-icons {
+            &__container {
+              width: 90%;
+            }
+          }
         }
       }
     }

@@ -86,3 +86,14 @@
     }
   }
 }
+
+@media screen and (max-width: 400px) {
+  .schedule {
+    &__block {
+      &_item {
+          width: 100%;
+          text-align: center;
+      }
+    }
+  }
+}

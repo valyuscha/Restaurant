@@ -403,6 +403,16 @@
   }
 }
 
+@media screen and (max-width: 390px) {
+  /* line 376, D:/Acer Extenza 5620/Диск D/valentina/Atom Space/My project/restaurant/scss/_header.scss */
+  .header .menu_contact_phone span {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+}
+
 /* line 1, D:/Acer Extenza 5620/Диск D/valentina/Atom Space/My project/restaurant/scss/_welcome.scss */
 .welcome {
   font-family: Poppins-regular, sans-serif;
@@ -545,6 +555,24 @@
   /* line 163, D:/Acer Extenza 5620/Диск D/valentina/Atom Space/My project/restaurant/scss/_welcome.scss */
   .welcome__block_form_img {
     left: 6%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  /* line 175, D:/Acer Extenza 5620/Диск D/valentina/Atom Space/My project/restaurant/scss/_welcome.scss */
+  .welcome__block_form_img {
+    display: none;
+  }
+  /* line 180, D:/Acer Extenza 5620/Диск D/valentina/Atom Space/My project/restaurant/scss/_welcome.scss */
+  .welcome__block_form form input {
+    width: 76%;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  /* line 194, D:/Acer Extenza 5620/Диск D/valentina/Atom Space/My project/restaurant/scss/_welcome.scss */
+  .welcome__block_form form input {
+    width: 74%;
   }
 }
 
@@ -848,6 +876,14 @@
   }
 }
 
+@media screen and (max-width: 400px) {
+  /* line 93, D:/Acer Extenza 5620/Диск D/valentina/Atom Space/My project/restaurant/scss/_schedule.scss */
+  .schedule__block_item {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 /* line 1, D:/Acer Extenza 5620/Диск D/valentina/Atom Space/My project/restaurant/scss/_menu.scss */
 .price {
   padding-top: 188px;
@@ -1014,6 +1050,22 @@
   }
 }
 
+@media screen and (max-width: 400px) {
+  /* line 195, D:/Acer Extenza 5620/Диск D/valentina/Atom Space/My project/restaurant/scss/_menu.scss */
+  .price__list ul li {
+    padding: 0 10px 10px 0;
+    margin: 0 auto;
+  }
+  /* line 199, D:/Acer Extenza 5620/Диск D/valentina/Atom Space/My project/restaurant/scss/_menu.scss */
+  .price__list ul li:last-child {
+    padding-right: 0;
+  }
+  /* line 207, D:/Acer Extenza 5620/Диск D/valentina/Atom Space/My project/restaurant/scss/_menu.scss */
+  .price__block_item_text {
+    width: 100%;
+  }
+}
+
 /* line 1, D:/Acer Extenza 5620/Диск D/valentina/Atom Space/My project/restaurant/scss/_stuff.scss */
 .stuff {
   margin-bottom: 280px;
@@ -1174,6 +1226,49 @@
   /* line 149, D:/Acer Extenza 5620/Диск D/valentina/Atom Space/My project/restaurant/scss/_stuff.scss */
   .stuff__block_back-small-round {
     top: 790px;
+  }
+  /* line 158, D:/Acer Extenza 5620/Диск D/valentina/Atom Space/My project/restaurant/scss/_stuff.scss */
+  .stuff__slider-block__item figure .stuff-hover {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  /* line 174, D:/Acer Extenza 5620/Диск D/valentina/Atom Space/My project/restaurant/scss/_stuff.scss */
+  .stuff__slider-block__item figure .worker {
+    width: 90%;
+  }
+  /* line 177, D:/Acer Extenza 5620/Диск D/valentina/Atom Space/My project/restaurant/scss/_stuff.scss */
+  .stuff__slider-block__item figure .worker img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  /* line 194, D:/Acer Extenza 5620/Диск D/valentina/Atom Space/My project/restaurant/scss/_stuff.scss */
+  .stuff__slider-block__item figure .worker {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  /* line 210, D:/Acer Extenza 5620/Диск D/valentina/Atom Space/My project/restaurant/scss/_stuff.scss */
+  .stuff__slider-block__item figure .worker {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  /* line 226, D:/Acer Extenza 5620/Диск D/valentina/Atom Space/My project/restaurant/scss/_stuff.scss */
+  .stuff__slider-block__item figure .worker {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  /* line 242, D:/Acer Extenza 5620/Диск D/valentina/Atom Space/My project/restaurant/scss/_stuff.scss */
+  .stuff__slider-block__item figure .worker {
+    width: 70%;
   }
 }
 
@@ -1791,34 +1886,49 @@
   .blog__slider-block__item section {
     width: 95%;
   }
+  /* line 137, D:/Acer Extenza 5620/Диск D/valentina/Atom Space/My project/restaurant/scss/_blog.scss */
+  .hover {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 749px) {
-  /* line 143, D:/Acer Extenza 5620/Диск D/valentina/Atom Space/My project/restaurant/scss/_blog.scss */
+  /* line 147, D:/Acer Extenza 5620/Диск D/valentina/Atom Space/My project/restaurant/scss/_blog.scss */
   .blog__slider-block__item section {
     width: 60%;
     margin: 0 auto;
   }
-  /* line 149, D:/Acer Extenza 5620/Диск D/valentina/Atom Space/My project/restaurant/scss/_blog.scss */
+  /* line 153, D:/Acer Extenza 5620/Диск D/valentina/Atom Space/My project/restaurant/scss/_blog.scss */
   .blog__slider-block__nav {
     width: 100%;
   }
 }
 
 @media screen and (max-width: 600px) {
-  /* line 162, D:/Acer Extenza 5620/Диск D/valentina/Atom Space/My project/restaurant/scss/_blog.scss */
+  /* line 166, D:/Acer Extenza 5620/Диск D/valentina/Atom Space/My project/restaurant/scss/_blog.scss */
   .blog__slider-block__item section {
     width: 70%;
   }
 }
 
 @media screen and (max-width: 500px) {
-  /* line 176, D:/Acer Extenza 5620/Диск D/valentina/Atom Space/My project/restaurant/scss/_blog.scss */
+  /* line 180, D:/Acer Extenza 5620/Диск D/valentina/Atom Space/My project/restaurant/scss/_blog.scss */
   .blog__slider-block__item section {
     width: 90%;
   }
-  /* line 181, D:/Acer Extenza 5620/Диск D/valentina/Atom Space/My project/restaurant/scss/_blog.scss */
+  /* line 185, D:/Acer Extenza 5620/Диск D/valentina/Atom Space/My project/restaurant/scss/_blog.scss */
   .blog__slider-block__nav {
+    width: 105%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  /* line 199, D:/Acer Extenza 5620/Диск D/valentina/Atom Space/My project/restaurant/scss/_blog.scss */
+  .blog__slider-block__item-text p {
+    width: 90%;
+  }
+  /* line 205, D:/Acer Extenza 5620/Диск D/valentina/Atom Space/My project/restaurant/scss/_blog.scss */
+  .blog__slider-block__item-icons__container {
     width: 90%;
   }
 }
@@ -1952,6 +2062,13 @@
   /* line 129, D:/Acer Extenza 5620/Диск D/valentina/Atom Space/My project/restaurant/scss/_contact.scss */
   .contact__block_message {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  /* line 141, D:/Acer Extenza 5620/Диск D/valentina/Atom Space/My project/restaurant/scss/_contact.scss */
+  .contact__block_schedule_days p {
+    font-size: 17px;
   }
 }
 
@@ -2209,6 +2326,17 @@
   /* line 260, D:/Acer Extenza 5620/Диск D/valentina/Atom Space/My project/restaurant/scss/_footer.scss */
   .footer__block_tag {
     width: 90%;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  /* line 270, D:/Acer Extenza 5620/Диск D/valentina/Atom Space/My project/restaurant/scss/_footer.scss */
+  .footer__block_tag {
+    width: 100%;
+  }
+  /* line 274, D:/Acer Extenza 5620/Диск D/valentina/Atom Space/My project/restaurant/scss/_footer.scss */
+  .footer__block_tag_links a {
+    font-size: 13px;
   }
 }
 

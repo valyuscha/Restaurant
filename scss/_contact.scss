@@ -132,3 +132,17 @@
     }
   }
 }
+
+@media screen and (max-width: 360px) {
+  .contact {
+    &__block {
+      &_schedule {
+        &_days {
+          p {
+            font-size: 17px;
+          }
+        }
+      }
+    }
+  }
+}

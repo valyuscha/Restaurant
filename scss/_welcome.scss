@@ -167,3 +167,35 @@
     }
   }
 }
+
+@media screen and (max-width: 400px) {
+  .welcome {
+    &__block {
+      &_form {
+        &_img {
+          display: none;
+        }
+
+        form {
+          input {
+            width: 76%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .welcome {
+    &__block {
+      &_form {
+        form {
+          input {
+            width: 74%;
+          }
+        }
+      }
+    }
+  }
+}
