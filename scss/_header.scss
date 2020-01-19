@@ -242,10 +242,15 @@
 
     .mobile_menu_click {
       display: block;
-      width: 100%;
-      text-align: right;
+      width: auto;
+      margin-left: auto;
       padding: 15px 0;
       font-size: 30px;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+      &__link:active {
+        color: transparent;
+      }
     }
   }
 }
