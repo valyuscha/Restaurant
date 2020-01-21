@@ -118,7 +118,13 @@
         }
       }
       &__nav {
-        @extend %slider-nav;
+        .stuff {
+          &-prev,
+          &-next {
+            @extend %slider-nav;
+          }
+        }
+
         width: 103%;
         display: flex;
         justify-content: space-between;
@@ -131,6 +137,29 @@
         color: #00c5d2;
         cursor: pointer;
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .stuff {
+    &__slider {
+      &-block {
+        &__item {
+          figure {
+            .stuff-hover {
+              display: none;
+            }
+
+            .worker {
+              &__morgan-young {
+                display: block;
+                padding: 0 24px;
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -151,18 +180,6 @@
         top: 790px;
       }
     }
-
-    &__slider {
-      &-block {
-        &__item {
-          figure {
-            .stuff-hover {
-              display: none;
-            }
-          }
-        }
-      }
-    }
   }
 }
 
@@ -174,6 +191,10 @@
           figure {
             .worker {
               width: 90%;
+
+              &__morgan-young {
+                padding: 0;
+              }
 
               img {
                 width: 100%;

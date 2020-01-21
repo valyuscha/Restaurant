@@ -82,18 +82,29 @@
 
 @media screen and (max-width: 900px) {
   .subscribe {
+    text-align: center;
+    margin: 0 auto;
+
     &__block {
       display: block;
 
       &_text {
         width: 70%;
-        margin-bottom: 50px;
+        margin: 0 auto 50px;
       }
 
       &_input {
+        display: block;
         width: 70%;
+        margin: 0 auto;
       }
     }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .subscribe {
+    margin-top: 100px;
   }
 }
 
@@ -106,6 +117,24 @@
 
       &_input {
         width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .subscribe {
+    &__block {
+      &_input {
+        input {
+          padding: 20px 95px 20px 15px;
+        }
+
+        button {
+          i {
+            padding: 12px;
+          }
+        }
       }
     }
   }

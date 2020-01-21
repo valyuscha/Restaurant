@@ -42,7 +42,13 @@
     }
 
     .feature__slider-block__nav {
-      @extend %slider-nav;
+      .feature {
+        &-prev,
+        &-next {
+          @extend %slider-nav;
+        }
+      }
+
       width: 103%;
       display: flex;
       justify-content: space-between;
@@ -52,7 +58,6 @@
       left: 50%;
       transform: translate(-50%, -50%);
       font-size: 48px;
-      color: #00c5d2;
       cursor: pointer;
       -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     }

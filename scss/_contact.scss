@@ -111,6 +111,8 @@
   .contact {
     &__block {
       display: block;
+      text-align: center;
+      padding-top: 100px;
 
       &_schedule {
         margin-bottom: 50px;
@@ -118,7 +120,16 @@
 
       &_message {
         width: 70%;
+        margin: 0 auto;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .contact {
+    &__name {
+      padding-top: 100px;
     }
   }
 }

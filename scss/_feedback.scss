@@ -84,7 +84,13 @@
       }
 
       &__nav {
-        @extend %slider-nav;
+        .feedback {
+          &-prev,
+          &-next {
+            @extend %slider-nav;
+          }
+        }
+
         width: 103%;
         display: flex;
         justify-content: space-between;
@@ -152,8 +158,14 @@
 
 @media screen and (max-width: 750px) {
   .feedback {
+    &__name {
+      padding-top: 70px;
+    }
+
     &__slider {
       &-block {
+        padding-bottom: 50px;
+
         &__item {
           &-img {
             display: none;
@@ -166,6 +178,30 @@
           &-text {
             width: 100%;
           }
+        }
+
+        &__nav {
+          width: 107%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .feedback {
+    &__slider {
+      &-block {
+        &__item {
+          &-text {
+            p {
+              width: 80%;
+            }
+          }
+        }
+
+        &__nav {
+          width: 110%;
         }
       }
     }
