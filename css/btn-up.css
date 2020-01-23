@@ -11,6 +11,7 @@
      z-index: 100;
      outline: 0!important;
      transition: .4s;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
  }
 
 .btn_up:after {

@@ -79,30 +79,6 @@ $('.feedback__slider-block').slick({
     ]
 })
 
-// $('.blog__slider-block').slick({
-//     slidesToShow: 3,
-//     slidesToScroll: 1,
-//     speed: 300,
-//     arrow: true,
-//     prevArrow: $('.blog-prev'),
-//     nextArrow: $('.blog-next'),
-//     responsive: [
-//         {
-//             breakpoint: 1205,
-//             settings: {
-//                 slidesToShow: 2
-//             }
-//         },
-//         {
-//             breakpoint: 830,
-//             settings: {
-//                 slidesToShow: 1
-//             }
-//         }
-//     ]
-// })
-
-
 let slickCenter,
     blogSlider = $('.blog__slider-block')
 

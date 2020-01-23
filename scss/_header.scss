@@ -68,6 +68,7 @@
           position: relative;
           right: 30px;
           border-radius: 0 6px 6px 0;
+          -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
           &:hover {
             cursor: pointer;
@@ -76,6 +77,8 @@
       }
 
       &_phone {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
         span {
           i {
             display: inline-block;
@@ -125,19 +128,17 @@
                 font-family: $Poppins-bold;
                 text-decoration: none;
                 outline: none;
-
-                &:hover {
-                  cursor: pointer;
-                }
+                transition: all .3s;
+                -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
               }
             }
           }
-
 
           button {
             margin: 0 35px;
             background: none;
             border: none;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
           }
 
           a:nth-child(3) {
@@ -147,6 +148,7 @@
             border-radius: 0 5px 0 5px;
             color: $white;
             text-decoration: none;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
             &:hover {
               cursor: pointer;
@@ -188,6 +190,7 @@
       padding: 63px 0 237px 0;
       width: 300px;
       @extend %flex;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
       a {
         color: $white;
@@ -248,8 +251,12 @@
       font-size: 30px;
       -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
-      &__link:active {
-        color: transparent;
+      &__link {
+        outline: none;
+
+        &:active {
+          color: transparent;
+        }
       }
     }
   }
@@ -292,6 +299,29 @@
   }
 }
 
+@media screen and (min-width: 851px) {
+  .header {
+    .menu {
+      &_links {
+        &_block {
+          &_menu {
+            ul {
+              li {
+                a {
+                  &:hover {
+                    color: $orange;
+                    border-bottom: 2px solid $orange;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 850px) {
   .header {
     .menu {
@@ -300,6 +330,9 @@
           &_menu {
             width: 100%;
             margin: 10px auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
 
             &:first-child {
               margin-top: 0;
@@ -314,7 +347,20 @@
               justify-content: center;
 
               li {
-                margin: 0 10px 10px 0;
+                padding: 15px 0;
+                display: block;
+                width: 100%;
+                text-align: center;
+                border-radius: 5px;
+
+                a {
+                  display: block;
+                  width: 100%;
+                }
+
+                &:hover {
+                  background: linear-gradient(to left, rgba(0, 255, 240, .5) 0%, rgba(64, 177, 229, .5) 100%);
+                }
 
                 &:last-child {
                   margin-left: 0;
@@ -323,15 +369,8 @@
             }
 
             button,
-            a:nth-child(3){
+            a:nth-child(3) {
               position: unset;
-              width: 49%;
-              margin-bottom: 20px;
-            }
-
-            button {
-              text-align: right;
-              margin: 0 0 20px 0;
             }
           }
         }
