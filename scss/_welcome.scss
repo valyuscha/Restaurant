@@ -182,8 +182,16 @@
 
         form {
           input {
-            width: 76%;
+            display: block;
+            width: 80%;
+            margin: 0 auto 20px;
           }
+        }
+
+        button {
+          display: block;
+          width: 90%;
+          margin: 0 auto 80px;
         }
       }
     }

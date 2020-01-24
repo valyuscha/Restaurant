@@ -139,4 +139,9 @@ $('.mobile_menu_click').click(function(){
     $('.menu_links_block_menu').fadeToggle();
 })
 
+$('.menu_links_block_menu ul li a').on('click', function () {
+    if($('.mobile_menu_click').css('display') == 'flex') {
+        $('.menu_links_block_menu').fadeToggle();
+    }
+});
 // Меню-бургер - конец

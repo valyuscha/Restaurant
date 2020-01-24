@@ -115,6 +115,7 @@
 
         &_menu {
           @extend %flex;
+          align-items: center;
           margin-left: 26%;
           width: 100%;
 
@@ -140,19 +141,20 @@
             border: none;
             -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
           }
+        }
 
-          a:nth-child(3) {
-            margin: 15px 0;
+        &_link {
+          &_a {
             padding: 5px 10px;
             background: $orange;
             border-radius: 0 5px 0 5px;
             color: $white;
             text-decoration: none;
             -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+          }
 
-            &:hover {
-              cursor: pointer;
-            }
+          &:hover {
+            cursor: pointer;
           }
         }
       }
@@ -219,6 +221,15 @@
     .menu {
       &_links {
         &_block {
+          &_link {
+            &_a {
+              position: absolute;
+              right: 0;
+              bottom: 0;
+              margin: 15px 0;
+            }
+          }
+
           &_menu {
             display: none;
             margin-left: 5%;
@@ -227,14 +238,8 @@
               width: 70%;
             }
 
-            button,
-            a:nth-child(3) {
-              position: absolute;
-              right: 0;
-              bottom: 0;
-            }
-
             button {
+              position: absolute;
               right: 130px;
               bottom: 17px;
             }
@@ -244,7 +249,7 @@
     }
 
     .mobile_menu_click {
-      display: block;
+      display: flex;
       width: auto;
       margin-left: auto;
       padding: 15px 0;
@@ -330,9 +335,7 @@
           &_menu {
             width: 100%;
             margin: 10px auto;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            display: none;
 
             &:first-child {
               margin-top: 0;
@@ -368,8 +371,20 @@
               }
             }
 
-            button,
-            a:nth-child(3) {
+            button {
+              position: unset;
+              display: block;
+              margin: 0 auto 20px;
+            }
+          }
+
+
+          &_link {
+            display: block;
+            text-align: center;
+            margin-bottom: 20px;
+
+            &_a {
               position: unset;
             }
           }
@@ -402,6 +417,16 @@
           display: block;
           width: 100%;
           text-align: center;
+
+          input {
+            display: block;
+            margin: 0 auto;
+          }
+
+          span {
+            bottom: 25px;
+            left: 110px;
+          }
         }
 
         &_form {

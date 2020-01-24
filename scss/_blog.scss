@@ -142,6 +142,26 @@
   }
 }
 
+@media screen and (max-width: 800px) {
+  .blog {
+    &__slider {
+      &-block {
+        &__item {
+          &-text {
+
+            h3,
+            p {
+              width: 85%;
+              padding-left: 0;
+              margin: 0 auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 749px) {
   .blog {
     padding-bottom: 100px;
@@ -157,6 +177,15 @@
             width: 60%;
             margin: 0 auto;
           }
+
+          //&-text {
+          //  h3,
+          //  p {
+          //    padding-left: 0;
+          //    margin: 0 auto;
+          //    text-align: center;
+          //  }
+          //}
         }
 
         &__nav {
